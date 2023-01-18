@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    font-family: 'inter', 'sans-serif';
+    padding: 99px 120px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*cada item em uma ponta*/
+}
+
+#register{
+    border: 1px solid #8B5CF6;
+    border-radius: 8px;
+
+    padding: 16px 24px;
+
+    background-color: transparent;
+    color: white;
+
+    font-family: 'inter', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+form{
+    display: flex;
+    gap: 32px;
+
+    padding: 48px 0px;
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin-top: 65px;
+}
+
+.icon_habits{
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days{
+    display: flex;
+    gap: 48px; 
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.date{
+    font-weight: 700;
+    font-family: 'roboto mono';
+    font-size: 20px;
+    color: #A1A1AA;
+
+    margin: 8px 0px;
+}
+
+input{
+    width: 50px;
+    height: 50px;
+
+    appearance: none; /*tirar todas as configurações*/
+    -webkit-appearance: none;
+
+    background: #18181B;
+    border: 2px solid #27272A;
+    border-radius: 8px;
+}
+
+input:checked{
+    background: #8B5CF6;
+    border: 2px solid #A78BFA;
+}
