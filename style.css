@@ -9,13 +9,19 @@ body{
     color: white;
     height: 100vh;
     font-family: 'inter', 'sans-serif';
-    padding: 99px 120px;
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: space-between; /*cada item em uma ponta*/
+
+    position: fixed;
+    width: 100%;
+
+    background-color: black;
+
+    padding: 48px;
 }
 
 #register{
@@ -40,7 +46,8 @@ form{
     display: flex;
     gap: 32px;
 
-    padding: 48px 0px;
+    padding: 181.6px 48px 48px;
+    width: fit-content; /*encaixar o conteudo na largura*/
 }
 
 .habits{
@@ -48,10 +55,10 @@ form{
     flex-direction: column;
     gap: 24px;
 
-    margin-top: 65px;
+    margin-top: 45px;
 }
 
-.icon_habits{
+.habit{
     width: 50px;
     height: 50px;
     font-size: 28px;
@@ -64,6 +71,7 @@ form{
 .days{
     display: flex;
     gap: 48px; 
+    margin-left: 32px;
 }
 
 .day {
@@ -86,7 +94,7 @@ input{
     width: 50px;
     height: 50px;
 
-    appearance: none; /*tirar todas as configurações*/
+    appearance: none;
     -webkit-appearance: none;
 
     background: #18181B;
@@ -97,4 +105,10 @@ input{
 input:checked{
     background: #8B5CF6;
     border: 2px solid #A78BFA;
+}
+
+@media (max-width: 570px){
+    #register div{
+        display: none;
+    }
 }
