@@ -20,34 +20,22 @@
 
         <button id="register"> 
             <img src="images/iconAdd.svg" alt="Sinal de adição na cor roxa"> 
-            Registrar o meu dia
+            <div>Registrar o meu dia</div>
         </button>
     </header>
 
     <form>
         <div class="habits">
-            <div class="icon_habits">💻</div>
-            <div class="icon_habits">🍎</div>
-            <div class="icon_habits">💧</div>
+            <div class="habit" data-name="studies">📚</div>
+            <div class="habit" data-name="food">🍎</div>
+            <div class="habit" data-name="water">💧</div>
+            <div class="habit" data-name="gym">💪🏻</div>
         </div>
 
-        <div class="days">
-            <div class="day">
-                <div class="date">03/01</div>
-                <input type="checkbox" name="studies">
-                <input type="checkbox" name="food">
-                <input type="checkbox" name="water">
-            </div>
-
-            <div class="day">
-                <div class="date">03/01</div>
-                <input type="checkbox" name="studies">
-                <input type="checkbox" name="food">
-                <input type="checkbox" name="water">
-            </div>
-        </div>
+        <div class="days"></div>
     </form>   
 
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
